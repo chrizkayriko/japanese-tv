@@ -61,82 +61,106 @@
     </div>
     <p style="text-align: center;">No video files are stored in this repository. The repository simply contains user-submitted links to publicly available video stream URLs, 
         which to the best of our knowledge have been intentionally made publicly by the copyright holders. Note that linking does not directly 
-        infringe copyright because no copy is made on the site providing the link, and thus this is not a valid reason to send a DMCA notice to GitHub. </p>
+        infringe on the copyright of the linked materials and any copyright-related questions should be directed to the actual video hosts.</p>
 
     <script>
         const channels = [
             {
-                name: "NHK G",
+                name: "NHK General TV",
                 logo: "https://upload.wikimedia.org/wikipedia/commons/6/6f/NHK%E7%B7%8F%E5%90%88%E3%83%AD%E3%82%B42020-.png",
-                url: "https://stream01.willfonk.com/live_playlist.m3u8?cid=BS291&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1"
+                url: "http://envyevents.co.za:8080/hls/nhkg/index.m3u8"
             },
             {
-                name: "NHK E",
-                logo: "https://upload.wikimedia.org/wikipedia/commons/a/aa/NHKE%E3%83%86%E3%83%AC%E3%83%AD%E3%82%B42020-.png",
+                name: "NHK Educational TV",
+                logo: "https://upload.wikimedia.org/wikipedia/commons/b/b8/NHKE%E3%83%86%E3%83%AC%E3%83%AD%E3%82%B42020-.svg",
                 url: "https://stream01.willfonk.com/live_playlist.m3u8?cid=BS292&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1"
             },
-
             {
                 name: "Nippon TV",
                 logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Nippon_TV_logo_2014.svg/2560px-Nippon_TV_logo_2014.svg.png",
-                url: "https://vnpt.nekocdn.xyz/hls/Nippon_TV/index.m3u8"
+                url: "https://ntv2.mov3.co/hls/ntv.m3u8"
             },
-
             {
-                name: "TBS",
-                logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Tokyo_Broadcasting_System_logo_2020.svg/1280px-Tokyo_Broadcasting_System_logo_2020.svg.png",
-                url: "https://stream01.willfonk.com/live_playlist.m3u8?cid=BS296&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1"
+                name: "Tokyo Broadcasting System (TBS)",
+                logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Tokyo_Broadcasting_System_logo_2020.svg/2560px-Tokyo_Broadcasting_System_logo_2020.svg.png",
+                url: "https://tbs1.mov3.co/hls/tbs.m3u8"
             },
-
             {
                 name: "Fuji TV",
                 logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Fuji_TV_Logo.svg/1049px-Fuji_TV_Logo.svg.png",
-                url: "https://stream01.willfonk.com/live_playlist.m3u8?cid=BS298&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1"
+                url: "https://fujitv2.mov3.co/hls/fujitv.m3u8"
             },
-
             {
                 name: "TV Asahi",
-                logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/TV_Asahi_Logo.svg/1280px-TV_Asahi_Logo.svg.png",
-                url: "https://stream01.willfonk.com/live_playlist.m3u8?cid=BS295&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1"
+                logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/TV_Asahi_Logo.svg/2560px-TV_Asahi_Logo.svg.png",
+                url: "http://envyevents.co.za:8080/hls/asahi/index.m3u8"
             },
-
             {
                 name: "TV Tokyo",
-                logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/TV_Tokyo_logo_2023.svg/2560px-TV_Tokyo_logo_2023.svg.png",
-                url: "https://stream01.willfonk.com/live_playlist.m3u8?cid=BS297&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1"
+                logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/TV_Tokyo_logo_20110629.svg/2560px-TV_Tokyo_logo_20110629.svg.png",
+                url: "http://cdn.envyevents.co.za:8080/hls/tokyo/index.m3u8"
             },
-            // Add other channels here...
+            {
+                name: "TOKYO MX1",
+                logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Tokyo_metropolitan_television_logo_%28rainbow%29.svg/2560px-Tokyo_metropolitan_television_logo_%28rainbow%29.svg.png",
+                url: "https://movie.mcas.jp/mcas/smil:mx1_prod.smil/master.m3u8"
+            },
+            {
+                name: "NHK BS",
+                logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/NHK_BS_2023_logo.svg/640px-NHK_BS_2023_logo.svg.png",
+                url: "https://stream01.willfonk.com/live_playlist.m3u8?cid=BS101&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1"
+            },
+            {
+                name: "NHK BSP4K",
+                logo: "https://upload.wikimedia.org/wikipedia/commons/7/77/NHK_BSP4K.png",
+                url: "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs01&isp=10&bind=0&uin=159413&playseek=0"
+            },
+            {
+                name: "NHK BS4K",
+                logo: "https://upload.wikimedia.org/wikipedia/commons/a/a3/NHK_BS4K_logo_2020.png",
+                url: ""
+            },
+            {
+                name: "BS11",
+                logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/BS11_logo.svg/2560px-BS11_logo.svg.png",
+                url: "http://csui.djtmewibu.com/bs11/index.m3u8"
+            },
+            {
+                name: "BS12",
+                logo: "https://raw.githubusercontent.com/atsushi444/iptv/main/logo/jp/Ch.222.png",
+                url: ""
+            },
+            {
+                name: "AT-X",
+                logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/AT-X_logo.svg/2560px-AT-X_logo.svg.png",
+                url: "https://sub2.neetball.net/live/neet.m3u8"
+            }
         ];
 
-        let currentIndex = 0;
+        let currentChannelIndex = 0;
 
-        const videoPlayer = document.getElementById('videoPlayer');
-        const channelLogo = document.getElementById('channelLogo');
-        const channelName = document.getElementById('channelName');
-        const prevButton = document.getElementById('prevButton');
-        const nextButton = document.getElementById('nextButton');
+        function loadChannel(index) {
+            const channel = channels[index];
+            const videoPlayer = document.getElementById('videoPlayer');
+            const channelLogo = document.getElementById('channelLogo');
+            const channelName = document.getElementById('channelName');
 
-        function updateChannel() {
-            const channel = channels[currentIndex];
             videoPlayer.src = channel.url;
             channelLogo.src = channel.logo;
             channelName.textContent = channel.name;
-            prevButton.disabled = currentIndex === 0;
-            nextButton.disabled = currentIndex === channels.length - 1;
+
+            document.getElementById('prevButton').disabled = index === 0;
+            document.getElementById('nextButton').disabled = index === channels.length - 1;
         }
 
         function changeChannel(direction) {
-            currentIndex += direction;
-            if (currentIndex < 0) {
-                currentIndex = 0;
-            } else if (currentIndex >= channels.length) {
-                currentIndex = channels.length - 1;
-            }
-            updateChannel();
+            currentChannelIndex += direction;
+            loadChannel(currentChannelIndex);
         }
 
-        // Initialize the first channel
-        updateChannel();
+        window.onload = function() {
+            loadChannel(currentChannelIndex);
+        };
     </script>
 </body>
 </html>
