@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.promos-slideshow {
+    display: block;
+    overflow: hidden; /* Ensures the container expands with its content */
+}
+
+.promo-slide {
+    display: none;
+    width: 100%;
+    position: relative; /* Ensures elements stack in normal flow */
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+.player-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto; 
+    display: block;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls button {
+    padding: 2%; /* Padding adjusts based on container size */
+    margin: 0 2vw; /* Horizontal margin adjusts with screen width */
+    border: none;
+    background-color: lightgray;
+    color: white;
+    cursor: pointer;
+    height: 10vh; /* Button height is 10% of the viewport height */
+    width: 10vh; /* Width same as height to create a square */
+    max-height: 100px; /* Maximum height to avoid buttons being too large */
+    max-width: 100px; /* Maximum width limit */
+    border-radius: 50%; /* Round shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls button img {
+    height: 50%; /* Image height as 50% of the button height */
+    max-height: 80px; /* Maximum image size */
+    width: auto; /* Maintain aspect ratio */
+}
+.controls button:disabled {
+    background-color: #cccccc;
+}
+.channel-info {
+    margin-top: 20px;
+    text-align: center;
+}
+.channel-logo {
+    max-width: 100px;
+    max-height: 50px;
+}
