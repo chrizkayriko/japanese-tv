@@ -43,9 +43,42 @@
 </head>
 <body>
     <center><h1>CHRIZKAYRIKO JAPANESE TV</h1></center>
-    <center><img src="images/3.png" style="width: 80%;"></center>
-    <center><img src="images/4.png" style="width: 80%;"></center>
-    <center><img src="images/5.png" style="width: 80%;"></center>
+
+    <div class="promos-slideshow" style="position: relative; width: 100%; max-width: 80%; margin: auto;">
+    <div class="promo-slide" style="display: none; position: absolute; width: 100%; animation-name: fade; animation-duration: 1.5s;">
+        <img src="images/3.png" style="width: 80%;">
+    </div>
+    <div class="promo-slide" style="display: none; position: absolute; width: 100%; animation-name: fade; animation-duration: 1.5s;">
+        <img src="images/4.png" style="width: 80%;">
+    </div>
+    <div class="promo-slide" style="display: none; position: absolute; width: 100%; animation-name: fade; animation-duration: 1.5s;">
+        <img src="images/5.png" style="width: 80%;">
+    </div>
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("promo-slide");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex - 1].style.display = "block";  
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+</script>
+
+<style>
+    @keyframes fade {
+        from {opacity: 0.4;} 
+        to {opacity: 1;}
+    }
+</style>
+
     <div class="player-container">
         <video id="videoPlayer" controls preload="auto" width="100%" height="auto">
             <source src="" type="application/x-mpegURL">
